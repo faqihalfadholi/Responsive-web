@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+</head>
+<style>
+
+    /* HP */
+    @media screen and (min-width: 0px) {
+        body {
+            font-size: 12px;
+            color: #a951f1;
+            background-color: #FFD1DC;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #7f1dcd;
+        }
+    }
+
+
+    /* Tablet */
+    @media screen and (min-width: 600px) {
+        body {
+            background-color: #FFFACD;
+            font-size: 14px;
+            color: #938700;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #e5ed0d;
+        }
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    /* Laptop */
+    @media screen and (min-width: 992px) {
+        body {
+            background-color: #E6E6FA;
+            font-size: 16px;
+            color: #de0ff4;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #e289ec;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+<body>
+
+<div class="container">
+    <h1>Responsive Web Design Example</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue.</p>
+    <img src="./image/img1.jpg" alt="work image">
+</div>
+
+</body>
+</html>
