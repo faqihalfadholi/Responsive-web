@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Flexbox</title>
+</head>
+<style>
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        padding: 10px 10px;
+        background-color: lightgray;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        margin: 20px;
+        padding: 10px 10px;
+        border: 2px solid #ddd;
+    }
+
+   .box {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        margin: 10px;
+        display: flex;
+       flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        transition: background-color 0.3s ease;
+   }
+
+    .flex-item {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;              /* Allow items to shrink if space is limited */
+        flex-basis: 200px;           /* Set a base size for the items */
+    }
+</style>
+<body>
+<div class="container1">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    <div class="box box4">Box 4</div>
+    <div class="box box5">Box 5</div>
+</div>
+
+<div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+    <div class="flex-item">Item 5</div>
+</div>
+
+</body>
+</html>
